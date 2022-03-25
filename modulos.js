@@ -44,7 +44,7 @@ export async function main(endpoint, titulo){
 	var myChart = new Chart(ctx, {
 	type: 'bar',
 	data: {
-	labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+	labels: ['PR', 'NY', 'VI', 'MA', 'NJ'],
 	datasets: [{
 	label: '# of Votes',
 	data: [12, 19, 3, 5, 2, 3],
