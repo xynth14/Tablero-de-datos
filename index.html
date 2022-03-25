@@ -61,35 +61,35 @@
 									<strong>PR</strong>
 									<div class="info">
 										<span>Nº de trabajos</span>
-										<span>2501</span>
+										<span id="nroTrabPR"></span>
 									</div>
 								</div>
 								<div class="item_ciudad">
 									<strong>NY</strong>
 									<div class="info">
 										<span>Nº de trabajos</span>
-										<span>1401</span>
+										<span id="nroTrabNY"></span>
 									</div>
 								</div>
 								<div class="item_ciudad">
 									<strong>VI</strong>
 									<div class="info">
 										<span>Nº de trabajos</span>
-										<span>3181</span>
+										<span id="nroTrabVI"></span>
 									</div>
 								</div>
 								<div class="item_ciudad">
 									<strong>MA</strong>
 									<div class="info">
 										<span>Nº de trabajos</span>
-										<span>581</span>
+										<span id="nroTrabMA"></span>
 									</div>
 								</div>
 								<div class="item_ciudad">
 									<strong>NJ</strong>
 									<div class="info">
 										<span>Nº de trabajos</span>
-										<span>4501</span>
+										<span id="nroTrabNJ"></span>
 									</div>
 								</div>
 
@@ -99,7 +99,7 @@
 					</div>
 
 
-					<div class="reportes">
+					<!--<div class="reportes">
 						<div class="title">
 							<h2>REPORTE POR CIUDADES</h2>
 						</div>
@@ -163,7 +163,7 @@
 
 							</div>
 						</div>
-					</div>
+					</div>-->
 
 					<canvas id="myChart" width="400" height="400"></canvas>
 
@@ -181,44 +181,9 @@
 
 	<script src="assets/js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+	<script type="module" src="./index.js"></script>
 	<script>
-		var ctx = document.getElementById('myChart').getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'bar',
-			data: {
-				labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-				datasets: [{
-					label: '# of Votes',
-					data: [12, 19, 3, 5, 2, 3],
-					backgroundColor: [
-						'rgba(255, 99, 132, 0.2)',
-						'rgba(54, 162, 235, 0.2)',
-						'rgba(255, 206, 86, 0.2)',
-						'rgba(75, 192, 192, 0.2)',
-						'rgba(153, 102, 255, 0.2)',
-						'rgba(255, 159, 64, 0.2)'
-					],
-					borderColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)',
-						'rgba(75, 192, 192, 1)',
-						'rgba(153, 102, 255, 1)',
-						'rgba(255, 159, 64, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero: true
-						}
-					}]
-				}
-			}
-		});
+
 	</script>
 </body>
 
