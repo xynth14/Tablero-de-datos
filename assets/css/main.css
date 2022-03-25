@@ -1,6 +1,10 @@
 :root {
   --color1: #00d6c7;
   --color2: #007a71;
+  --color3: rgba(54, 162, 235, 1);
+  --color4: rgba(255, 206, 86, 1);
+  --color5: rgba(75, 192, 192, 1);
+  --color6: rgba(153, 102, 255, 1);
   --griss1: #eeeeee;
   --griss2: #8c8c8c;
   --griss3: #444444;
@@ -237,8 +241,17 @@ main .dash_content .ciudades .ciudades_content .item_ciudad {
   border-radius: 10px;
   padding: 20px;
 }
-main .dash_content .ciudades .ciudades_content .item_ciudad:nth-child(2n) {
-  background: var(--color2);
+main .dash_content .ciudades .ciudades_content .item_ciudad:nth-child(2) {
+  background: var(--color3);
+}
+main .dash_content .ciudades .ciudades_content .item_ciudad:nth-child(3) {
+  background: var(--color4);
+}
+main .dash_content .ciudades .ciudades_content .item_ciudad:nth-child(4) {
+  background: var(--color5);
+}
+main .dash_content .ciudades .ciudades_content .item_ciudad:nth-child(5) {
+  background: var(--color6);
 }
 main .dash_content .ciudades .ciudades_content .item_ciudad > strong {
   font: 700 48px var(--font1);
